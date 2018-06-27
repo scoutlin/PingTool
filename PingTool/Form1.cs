@@ -26,7 +26,7 @@ namespace PingTool {
             var stringIP = textBox1.Text;
             bool rt = false;
 
-            rt = gPingToolDll.Check(stringIP);
+            rt = gPingToolDll.Check(stringIP, 5000);
 
             if(rt == true) {
                 label2.Text = "Result: Connected";
